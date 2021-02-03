@@ -68,9 +68,7 @@ header nav ul {
 nav .logo, nav .logo img {
     max-width: 40px;
 }
-header nav li {
 
-}
 
 header nav li a {
     text-decoration: none;
@@ -133,9 +131,7 @@ a {
     color:#ff5255;
 }
 
-@font-face{
-    
-}
+
 h1{
     color: #ffc51f;
     font-family: 'Big Shoulders Display', cursive;
@@ -154,15 +150,16 @@ h3{
 
 #about .box {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
+    
 }
 
 #about .teammate {
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 500px;
-    width: 500px;
-    margin:.5em;
+    flex-basis: 270px;
+    width: 50%;
+    margin:0.1rem;
 }
 
 #about iframe {
