@@ -175,6 +175,33 @@ h3{
 
 
 
+/* Form*/
+input {
+    width: 100%;
+    font-size: 1.15em;
+    background: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: .25em;
+    margin: .5rem;
+}
+#petition p {
+    margin: .15 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
