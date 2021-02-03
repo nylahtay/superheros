@@ -11,10 +11,12 @@
 html, body, footer, div, article, section, header, p, h1, h2, h3, ol, li {
     padding: 0;
     margin: 0;
+    color: white;
 }
 
 article, section, footer {
     padding: 1rem 0;
+    background-color: #a03031;
 }
 
 
@@ -26,10 +28,10 @@ article, section, footer {
 
 /*Light background*/
 .bglight {
-    background-color: rgb(218, 218, 218);
+    background-color:#0a3f6b ;
 }
 .bglight p {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -74,24 +76,24 @@ header nav li a {
     text-decoration: none;
     font-family: sans-serif;
     font-weight: bold;
-    color: #6060f7;
-    padding: 0 .5rem;
+    color: #8f5512;
+    padding: 0.5rem;
     line-height: 50px;
     box-sizing: content-box;
-    height: 50px;
+    height: 3rem;
+    width: 9rem;
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 1rem;
+    transition: 250ms;
 }
 
 header nav li a:hover {
-    background: blue;
+    background-color: #015499 ;
     color: #ffc51f;
 
 }
 
-header nav li :hover{
-    background-color: aqua;
-}
+
 
 /* buttons */
 button{
@@ -124,15 +126,40 @@ a.navbar.notMain {
     color: #8f5512 ;
     border-color: #8f5512;
 }
+li {
+    list-style: none}
 a {
     text-decoration: none;
+    color:#ff5255;
+}
+
+@font-face{
+    
+}
+h1{
+    color: #ffc51f;
+    font-family: 'Big Shoulders Display', cursive;
+
+}
+h3{
+        color: #ffc51f;
+        font-family: 'Big Shoulders Display', cursive;
 
 }
 
 
 
 
+/*About page styles*/
 
+#about .box {
+    display: flex;
+    flex: wrap;
+}
+
+#about .teammate {
+    flex: 1 1 1 300px;
+}
 
 
 
