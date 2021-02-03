@@ -7,6 +7,7 @@ let menu_items = [['Home', '/index.html', 'home'],['About', '/about.html', 'abou
 const nav = document.createElement('nav');
 //create innerDiv elemtn
 let innerDiv = document.createElement('div');
+innerDiv.classList.add('inner');
 let navUL = document.createElement('ul');
 //create the menu items
 for (i=0; i<menu_items.length; i++){
