@@ -1,0 +1,59 @@
+/*some simple resets*/
+html, body, footer, div, article, section, header, p, h1, h2, h3, ol, li {
+    padding: 0;
+    margin: 0;
+}
+
+article, section, footer {
+    padding: 1rem 0;
+}
+
+
+.inner {
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+/*Light background*/
+.bglight {
+    background-color: rgb(218, 218, 218);
+}
+.bglight p {
+    color: black;
+}
+
+
+
+/*dark background*/
+.bgdark {
+    background-color: rgb(34, 34, 34);
+}
+.bgdark p {
+    color: white;
+}
+.bgdark h1,
+.bgdark h2,
+.bgdark h3 {
+    color: blanchedalmond;
+}
+
+
+
+/* Header Styles */
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    padding: 1rem;
+}
+
+header nav li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #6060f7;
+}
