@@ -9,20 +9,28 @@ const nav = document.createElement('nav');
 let innerDiv = document.createElement('div');
 innerDiv.classList.add('inner');
 let navUL = document.createElement('ul');
+let sublist = document.createElement('ul');
 //create the menu items
 for (i=0; i<menu_items.length; i++){
     let menuItemLI = document.createElement('li');
     let menuItemA = document.createElement('a');
     menuItemA.href = menu_items[i][1];
+    menuItemA.classList.add('navbar');
+    menuItemA.innerHTML = menu_items[i][0];
     //add class for hamburger menu items
     if (menu_items[i][2] != 'home'){
         menuItemA.classList.add('notMain');
+        let sublistLI = document.createElement('li');
+        sublistLI.appendChild(menuItemA);
+        sublist.appendChild(sublistLI);
     }
-    menuItemA.classList.add('navbar');
-    menuItemA.innerHTML = menu_items[i][0];
-    menuItemLI.appendChild(menuItemA);
+    else {
+        menuItemLI.appendChild(menuItemA);
+    }
     navUL.appendChild(menuItemLI);
+    menuItemLI.appendChild(sublist);
 }
+sublist.classList.add('sublist');
 //create the logo
 const logoContainer = document.createElement('div');
 const logoImg = document.createElement('img');
