@@ -72,15 +72,44 @@ header nav li a {
     text-decoration: none;
     font-family: sans-serif;
     font-weight: bold;
-    color: #6060f7;
-    padding: .5rem;
-    width:6rem;
+    color: #ffc51f;
+    padding: 0.5rem 1rem;
+    
+}
+header nav li :hover{
+    background-color: aqua;
 }
 
+/* buttons */
+button{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #ffc51f;
+    transition: 200ms;
+    color: #8f5512;
 
+}
+button:hover{
+        background-color: #8f5512;
+    color: #ffc51f ;
+    border-color: #ffc51f;
+}
 
+.secondary{
+    background-color: #8f5512;
+    transition: 200ms;
+    color: #ffc51f;
+    border-color: #ffc51f;
+}
+.secondary:hover{
+    background-color: #ffc51f;
+    color: #8f5512 ;
+    border-color: #8f5512;
+}
+a {
+    text-decoration: none;
 
-
+}
 
 
 
