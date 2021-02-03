@@ -21,6 +21,7 @@ article, section, footer {
 .inner {
     margin: 0 auto;
     padding: 0 1rem;
+    max-width: 80%;
 }
 
 /*Light background*/
@@ -51,7 +52,7 @@ article, section, footer {
 /* Header Styles */
 header nav {
     display: flex;
-    padding: .5rem;
+    align-items: center;
 }
 
 header nav ul {
@@ -59,7 +60,7 @@ header nav ul {
     display: flex;
     margin: 0;
     padding: 0;
-    
+    margin-left: .5rem;
 }
 nav .logo, nav .logo img {
     max-width: 40px;
@@ -73,8 +74,21 @@ header nav li a {
     font-family: sans-serif;
     font-weight: bold;
     color: #6060f7;
-    padding: .5rem;
-    width:6rem;
+    padding: 0 .5rem;
+    line-height: 50px;
+    box-sizing: content-box;
+    height: 50px;
+    display: block;
+}
+
+header nav li a:hover {
+    background: blue;
+}
+
+
+/*mobile menu*/
+a.navbar.notMain {
+    display: none;
 }
 
 
@@ -93,16 +107,25 @@ header nav li a {
 
 
 
-
-
-
-
+@media only screen and (min-width: 500px) {
+    .inner {
+        margin: 0 auto;
+        padding: 0 5rem;
+        max-width: 80%;
+    }
+    a.navbar.notMain {
+        display: block;
+    }
+}
 
 @media only screen and (min-width: 769px) {
     .inner {
         margin: 0 auto;
         padding: 0 5rem;
         max-width: 80%;
+    }
+    a.navbar.notMain {
+        display: block;
     }
 }
 

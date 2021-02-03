@@ -14,6 +14,10 @@ for (i=0; i<menu_items.length; i++){
     let menuItemLI = document.createElement('li');
     let menuItemA = document.createElement('a');
     menuItemA.href = menu_items[i][1];
+    //add class for hamburger menu items
+    if (menu_items[i][2] != 'home'){
+        menuItemA.classList.add('notMain');
+    }
     menuItemA.classList.add('navbar');
     menuItemA.innerHTML = menu_items[i][0];
     menuItemLI.appendChild(menuItemA);
