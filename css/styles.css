@@ -158,9 +158,18 @@ h3{
 }
 
 #about .teammate {
-    flex: 1 1 1 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 500px;
+    width: 500px;
+    margin:.5em;
 }
 
+#about iframe {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
 
 
 
