@@ -79,19 +79,54 @@ header nav li a {
     box-sizing: content-box;
     height: 50px;
     display: block;
+    padding: 0.5rem 1rem;
 }
 
 header nav li a:hover {
     background: blue;
+    color: #ffc51f;
+
 }
 
+header nav li :hover{
+    background-color: aqua;
+}
+
+/* buttons */
+button{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #ffc51f;
+    transition: 200ms;
+    color: #8f5512;
+
+}
+button:hover{
+        background-color: #8f5512;
+    color: #ffc51f ;
+    border-color: #ffc51f;
+}
 
 /*mobile menu*/
 a.navbar.notMain {
     display: none;
 }
 
+.secondary{
+    background-color: #8f5512;
+    transition: 200ms;
+    color: #ffc51f;
+    border-color: #ffc51f;
+}
+.secondary:hover{
+    background-color: #ffc51f;
+    color: #8f5512 ;
+    border-color: #8f5512;
+}
+a {
+    text-decoration: none;
 
+}
 
 
 
