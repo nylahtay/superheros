@@ -1,3 +1,12 @@
+/* var */
+:root{
+    --maincolor:#4690ce;
+    --secoundcolor: #ffc51f;
+    --thirdcolor:#a03031;
+    --textlight:white;
+    --textdark:black;
+
+}
 /*some simple resets*/
 html, body, footer, div, article, section, header, p, h1, h2, h3, ol, li {
     padding: 0;
@@ -26,7 +35,7 @@ article, section, footer {
 
 /*dark background*/
 .bgdark {
-    background-color: rgb(34, 34, 34);
+    background-color: var(--maincolor);
 }
 .bgdark p {
     color: white;
@@ -50,11 +59,13 @@ header nav ul {
     display: flex;
     margin: 0;
     padding: 0;
+    
 }
 nav .logo, nav .logo img {
     max-width: 40px;
 }
 header nav li {
+
 }
 
 header nav li a {
@@ -63,6 +74,7 @@ header nav li a {
     font-weight: bold;
     color: #6060f7;
     padding: .5rem;
+    width:6rem;
 }
 
 
